@@ -21,9 +21,9 @@ Alternatively, you can use [Atlassian SourceTree](https://www.atlassian.com/soft
 (feature/masquerading) $ git push -u origin feature/masquerading
 
 ## Ask for feedback (initiate pull request)
-Use the Github/VisualStudio site to create a pull request. After incorporating reviewers' comments, 
-make further commits to your branch, push your new commits to the remote. GitHub/VisualStudio will 
-automatically update the pull request to contain your new changes, so you do not need to issue another 
+Use the service-site (GitHub/BitBucket/VisualStudio) to create a pull request. After incorporating 
+reviewers' comments, make further commits to your branch, push your new commits to the remote. Service will 
+automatically update the pull request to reflect your new changes, so you do not need to issue another 
 pull request. Repeat the process below until you have incorporated all the feedback and ready to merge
 to master.
 
@@ -44,8 +44,11 @@ This replays your commits on top of the new commits from the destination branch 
 _(feature/masquerading) $ git rebase master_
 
 ## Merge feature work from local-branch to local-master 
-'merge --squash' squashes all the commits into one commit, which is recommended because these commits most likely achieve the same goal. If you go 
-with "merge --squash", you need an extra "git commit" and modifying the commit message.
+One option is to merge pull-request from the service-site, which will trigger code merge. 
+
+Alternatively, you can use git command 'merge --squash' that squashes all the commits into one commit, which is 
+recommended because these commits are likely to achieve the same goal. If you go with "merge --squash", you need 
+an extra "git commit".
 
 _ (feature/masquerading) $ git checkout master_
 
