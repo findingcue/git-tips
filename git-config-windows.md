@@ -1,5 +1,7 @@
 # To set default 'commit' editor
 
+Prerequisite: Install [Notepad++](https://notepad-plus-plus.org)
+
 Sets Notepad++ editor as default GIT commit editor.Make sure Notepad++ is installed.
 
     $ git config --global core.editor "'c:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
@@ -14,10 +16,9 @@ Setting your email address for a single repository: You may need to set a differ
 	$ git config user.email "john@work.com"
     
 # To configure difftool & diffmerge
-[SourceGear DiffMerge](https://sourcegear.com/diffmerge)
 
-Pre-requisite: 
-1. Install SourceGear DiffMerge (64-Bit) available for download from download.cnet.com
+Prerequisite: 
+1. Install [SourceGear DiffMerge](https://sourcegear.com/diffmerge)
 2. Make sure environment-variable PATH is appended with path to sgdm.exe
 
 To configure diff tool
@@ -47,12 +48,11 @@ To launch mergetool
 
     $ git mergetool
 
-# To ignore certain files
+# To ignore certain files from commiting
     
-    $ git config --global core.excludesfile {filepath e.g. => Test/common/gitconfigfiles/.gitignore}
+    $ git config --global core.excludesfile {.gitignore-file-path}
 
 Following are some examples that have been tested on Windows successfully:
 
-    $ git config --global core.excludesfile common\gitconfigfiles\.gitignore
-    $ git config --global core.excludesfile "d:/Development/Projects/repositories/Test/common/gitconfigfiles/.gitignore"
-    
+    $ git config --global core.excludesfile config\.gitignore
+    $ git config --global core.excludesfile "c:/git/repo1/.gitignore"
