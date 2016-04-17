@@ -19,11 +19,11 @@ Alternatively, you can use [Atlassian SourceTree](https://www.atlassian.com/soft
 (feature/masquerading) $ git push -u origin feature/masquerading
 
 ## Ask for feedback (initiate pull request)
-Use the service-site (GitHub/BitBucket/VisualStudio) to create a pull request. After incorporating 
-reviewers' comments, make further commits to your branch, push your new commits to the remote. Service will 
-automatically update the pull request to reflect your new changes, so you do not need to issue another 
-pull request. Repeat the process below until you have incorporated all the feedback and ready to merge
-to master.
+Use the Git hosting site (e.g. GitHub) to create a pull request. After incorporating reviewers' 
+comments, make further commits to your branch, push your new commits to the remote. Service will 
+automatically update the pull request to reflect new changes, so you do not need to issue another 
+pull request. Repeat the process below until you have incorporated all the feedback and ready to
+merge to master.
 
     (feature/masquerading) $ subl {filename}
     (feature/masquerading) $ git add {filename}

@@ -2,7 +2,7 @@
 
 Prerequisite: Install [Notepad++](https://notepad-plus-plus.org)
 
-Sets Notepad++ editor as default GIT commit editor.Make sure Notepad++ is installed.
+Sets Notepad++ editor as default GIT commit editor. Make sure Notepad++ is installed.
 
     $ git config --global core.editor "'c:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
 
