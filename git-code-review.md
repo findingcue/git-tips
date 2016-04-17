@@ -1,5 +1,8 @@
 # Code-review process using Git
 
+## Pull latest changes to local master branch
+    (master) $ git pull origin
+
 ## Create a new branch for story (feature) you're working on
     (master) $ git checkout -b feature/masquerading
 
