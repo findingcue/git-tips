@@ -53,3 +53,7 @@ If above doesn't work then try the following sequence which is really what 'git 
 	$ git stash
 	$ git pull origin
 	$ git stash apply
+
+## To pull remote branch locally
+	$ git pull origin {branch-name}
+	$ git checkout {branch-name}
